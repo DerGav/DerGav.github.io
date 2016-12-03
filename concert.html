@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>BandMate</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/band_mate.css">
+	<link rel="stylesheet" href="css/song.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<!-- jQuery -->
+	<link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+	<!-- jQuery UI -->
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment-with-locales.min.js"></script>
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.vertical-tabs.css">
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+
+
+	<style>
+		body {
+			font-family: 'Source Sans Pro', sans-serif;
+
+		}
+	
+		.navbar.navbar-inverse {
+			margin: 0;
+		}
+		
+		.col-lg-12.footer {
+			height: 120px;
+			background-color: #DEDEDE;
+			text-align: center;
+		}
+		
+		.col-lg-12.footer p {
+			padding-top: 20px 0;
+		}
+		
+		button.btn.btn-lg.btn-primary.btn-add-panel {
+			margin: 20px 0;
+		}
+		
+		.panel-group {
+			margin-bottom: 150px;
+		}
+		
+		body {
+			font-family: Arial;
+			color: #900;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+16,ffffff+16,ffffff+18,ffffff+23,cecece+100 */
+			background: #ffffff;
+			/* Old browsers */
+			background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 16%, #ffffff 16%, #ffffff 18%, #ffffff 23%, #cecece 100%);
+			/* FF3.6-15 */
+			background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 16%, #ffffff 16%, #ffffff 18%, #ffffff 23%, #cecece 100%);
+			/* Chrome10-25,Safari5.1-6 */
+			background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 16%, #ffffff 16%, #ffffff 18%, #ffffff 23%, #cecece 100%);
+			/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece', GradientType=1);
+			/* IE6-9 fallback on horizontal gradient */
+		}
+		
+		a {
+			color: #900;
+		}
+		
+		.navbar-header {
+			background-color: #900;
+		}
+		
+		h1 {
+			color: black;
+			font-weight: 700;
+		}
+		
+		h2 {
+			font-weight: 300;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse" style="background-color:#900;border:1px #900 solid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html" style="color:white font-weight: 300;">BandMate</a>
+		</div>
+	</nav>
+
+	<nav class="navbar navbar-default">
+		<ul class="nav navbar-nav">
+			<li><a href="index.html">Dashboard</a></li>
+			<li class="active"><a href="concerts.html">Concerts</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="songs.html">Songs</a></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<div class="border mainContent ">
+			<!-- Tab panes -->
+			<div id="tabContainer" class="col-sm-6">
+				<h3>MM/DD/YY Concert @ Venue</h3>
+				<hr>
+				<div class="col-xs-3">
+					<!-- required for floating -->
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs tabs-left" role="tablist">
+						<li class="active"><a href="#tab_01" data-toggle="tab">Transportation<span class="glyphicon glyphicon-pencil pull-right"></a>
+						</li>
+						<li><a href="#tab_02" data-toggle="tab">Equipment<span class="glyphicon glyphicon-pencil pull-right"></a>
+						</li>
+						<li><a href="#tab_03">Venue<span class="glyphicon glyphicon-pencil pull-right"></a>
+						</li>
+						<li><a href="#" class="add-tab">+ Add Tab</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-xs-9">
+					<!-- Tab panes -->
+					<div id="tabContents" class="tab-content">
+						<div class="tab-pane active" id="tab_01">
+							<div class="tabText">
+								Transportation
+							</div>
+							<!--<button type="button" class="btn btn-primary btn-circle btn-lg pull-right add"><i class="glyphicon glyphicon-plus"></i></button>-->
+							<!--<img src="img/CircleIcons/48x48/youtube.png" class=" icon pull-right youtube" />-->
+						</div>
+						<div class="tab-pane" id="tab_02">
+							<div class="tabText">
+							Equipment
+							</div>
+							<button type="button" class="btn btn-primary btn-circle btn-lg pull-right add"><i class="glyphicon glyphicon-plus"></i></button>
+							<img src="img/CircleIcons/48x48/youtube.png" class=" icon pull-right youtube" />
+
+						</div>
+						<div class="tab-pane" id="tab_03">
+							<div class="tabText">
+								Venue
+							</div>
+							<button type="button" class="btn btn-primary btn-circle btn-lg pull-right add"><i class="glyphicon glyphicon-plus"></i></button>
+							<img src="img/CircleIcons/48x48/youtube.png" class="icon pull-right youtube" data-toggle="modal" data-target="#myModal" />
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="clearfix"></div>
+
+		</div>
+	</div>
+	</div>
+
+	<!-- Modal -->
+	<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
+	<!--	<div class="modal-dialog" role="document">-->
+	<!--		<div class="modal-content">-->
+	<!--			<div class="modal-header">-->
+	<!--				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+	<!--				<label for='youtube'><h3 class="modal-title" id="myModalLabel">Search Youtube: </h3></label>-->
+	<!--				<input type="text" id='youtube'>-->
+
+	<!--			</div>-->
+	<!--			<div class="modal-body">-->
+
+	<!--			</div>-->
+	<!--			<div class="modal-footer">-->
+	<!--				footer-->
+	<!--			</div>-->
+			</div>
+		</div>
+	</div>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/song.js"></script>
+
+</body>
+
+</html>
+
+
+
+<!--<!DOCTYPE html>-->
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<!--<html lang="en-us">-->
+
+<!--<head>-->
+<!--	<meta charset="utf-8">-->
+<!--	<title>-->
+<!--		<a href="dashboard.hmtl"></a>BandMate Dashboard</a>-->
+<!--	</title>-->
+
+<!--	<link rel="stylesheet" href="css/concert.css">-->
+
+
+<!--	<link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />-->
+	<!-- Latest compiled and minified CSS -->
+<!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
+<!--	<link rel="stylesheet" href="css/bootstrap.vertical-tabs.css">-->
+<!--	<link rel="stylesheet" href="css/band_mate.css">-->
+
+<!--	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>-->
+<!--	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+
+<!--	<script src="js/concert.js"></script>-->
+
+<!--</head>-->
+
+<!--<body>-->
+
+<!--			<div class="container  centered">-->
+<!--				<div class="col-xs-9 border mainContent ">-->
+					<!-- Tab panes -->
+<!--					<div id="tabContainer" class="col-sm-6">-->
+<!--						<h3>MM/DD/YY Concert @ Venue</h3>-->
+<!--						<hr>-->
+<!--						<div class="col-xs-3">-->
+							<!-- required for floating -->
+							<!-- Nav tabs -->
+<!--							<ul class="nav nav-tabs tabs-left" role="tablist">-->
+<!--								<li class="active"><a href="#contact_01" data-toggle="tab">Overview <span class="glyphicon glyphicon-pencil pull-right"></a>-->
+<!--								</li>-->
+<!--								<li><a href="#contact_02" data-toggle="tab">Equipment<span class="glyphicon glyphicon-pencil pull-right"></a>-->
+<!--								</li>-->
+<!--								<li><a href="#contact_02">Transportation <span class="glyphicon glyphicon-pencil pull-right"></a>-->
+<!--								</li>-->
+<!--								<li><a href="#" class="add-tab">+ Add Tab</a>-->
+<!--								</li>-->
+<!--							</ul>-->
+<!--						</div>-->
+
+<!--						<div class="col-xs-9">-->
+							<!-- Tab panes -->
+<!--							<div id="tabContents" class="tab-content">-->
+<!--								<div class="tab-pane active" id="contact_01">Contact Form: Joe Smith</div>-->
+<!--								<div class="tab-pane" id="contact_02">Contact Form: Molly Lewis</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+
+<!--					<div class="clearfix"></div>-->
+
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+		
+<!--	</div>-->
+		<!-- Latest compiled and minified JavaScript -->
+<!--		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+<!--</body>-->
+
+<!--</html>-->

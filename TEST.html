@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Search</title>
+
+    <!-- jQuery -->
+    <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment-with-locales.min.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        var url = "https://youtube.com/embed/"
+        var searchString
+        $.ajax(
+        {
+            cache: false,
+            data: $.extend(
+            {
+                key: 'AIzaSyCyPN6By6mw1vREdPXpzcbjMz1dt2tDowg',
+                q: searchString,
+                part: 'snippet'
+            },
+            {
+                maxResults: 20,
+                pageToken: $("#pageToken").val()
+            }),
+            dataType: 'json',
+            type: 'GET',
+            timeout: 5000,
+            url: 'https://www.googleapis.com/youtube/v3/search',
+            success: function(resp)
+            {
+                console.log(resp.items);
+                $.each(resp.items, function(i, item)
+                {
+                    if (i < 5)
+                    {
+                        $('<div class="row"></div>').append(
+                            $('<div></div>').attr('class','col-sm-3').append(
+                            $('<iframe></iframe').attr('src', url + item.id.videoId)
+                                                 .attr('allowfullscreen','')
+                        ))
+                        .append(
+                            '<div class="col-sm-9><h2>text</h2></div>'
+                                        )
+                        .appendTo($('body'));
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                })
+            }
+        })
+    </script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

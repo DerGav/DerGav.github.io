@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="en-US">
+
+<head>
+
+ <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+ <meta name="generator" content="2017.0.0.363" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <script type="text/javascript">
+  // Update the 'nojs'/'js' class on the html node
+  document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+  // Check that all required assets are uploaded and up-to-date
+  if (typeof Muse == "undefined") window.Muse = {};
+  window.Muse.assets = {
+   "required": ["museutils.js", "museconfig.js", "jquery.watch.js", "require.js", "data.css"],
+   "outOfDate": []
+  };
+ </script>
+
+ <title>data</title>
+ <!-- CSS -->
+ <link rel="stylesheet" type="text/css" href="css/site_global.css" />
+ <link rel="stylesheet" type="text/css" href="css/master_a-master.css" />
+ <link rel="stylesheet" type="text/css" href="css/data.css" id="pagesheet" />
+ 
+ <meta charset="utf-8">
+  <title>BandMate</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/band_mate.css">
+  <link rel="stylesheet" href="../css/concerts.css">
+  <link rel="stylesheet" href="../css/index.css">
+
+
+  <!-- jQuery -->
+  <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+  <!-- jQuery UI -->
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment-with-locales.min.js"></script>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
+
+</head>
+
+<body>
+
+ <div class="clearfix borderbox" id="page">
+  <!-- group -->
+  <nav class="navbar navbar-inverse" style="background-color:#900;border:1px #900 solid">
+   <div class="navbar-header">
+    <a class="navbar-brand" href="index.html" style="color:white">BandMate</a>
+   </div>
+  </nav>
+
+  <nav class="navbar navbar-default">
+   <ul class="nav navbar-nav">
+    <li><a href="index.html">Dashboard</a></li>
+    <li><a href="concerts.html">Concerts</a></li>
+    <li class="active"><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="songs.html">Songs</a></li>
+   </ul>
+  </nav>
+
+
+  <div class="container mainContent">
+   <div class="row">
+    <div class="col-md-12">
+
+     <h1>Portfolio</h1>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor lobortis lorem vel maximus. Nunc cursus, tellus vel viverra porta, leo enim accumsan tortor, vel tincidunt ex diam sed ligula. Praesent quis nisi cursus, porttitor justo sed,
+      varius eros. Donec ac convallis nisl.</p>
+    </div>
+   </div>
+
+
+
+   <button class="btn btn-lg btn-primary btn-add-panel"> <i class="glyphicon glyphicon-plus"></i> Add New </button>
+
+
+   <div class="panel-group" id="accordion">
+
+    <div class="panel panel-default template">
+     <div class="panel-heading">
+      <span class="pull-right">
+            <a class="share"href="#" data-html="true" data-content="<img data-name='test' class='email' src='img/CircleIcons/48x48/email.png'>"data-toggle="popover" title="Share" data-placement="top" ><span class="glyphicon glyphicon-share-alt col-sm-1"></span></a>
+      <a><span class="glyphicon glyphicon-cloud-download col-sm-1"></span></a>
+      </span>
+
+      <h4 class="panel-title">
+       <div class="row">
+
+        <div class="col-xs-1 vcenter icon">
+         <span class="glyphicon glyphicon-collapse-down col-sm-1"></span>
+        </div>
+
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"></a>
+
+       </div>
+       <!-- row -->
+      </h4>
+
+     </div>
+     <!-- panel heading -->
+
+
+     <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body"></div>
+     </div>
+
+    </div>
+    <!-- panel default template -->
+   </div>
+   <!-- panel group -->
+
+
+  </div>
+  <!-- row -->
+
+
+
+
+
+ </div>
+ <!-- container mainContent -->
+
+ <!-- footer -->
+ <div class="row">
+  <div class="col-lg-12 footer">
+   <!--<p class="muted pull-right">Copyright 2016 BandMate. All rights reserved.</p>-->
+   <p style="padding-top: 30px;">Copyright 2016 BandMate. All rights reserved.</p>
+   <a href="#">Terms of Service</a> | <a href="#">Privacy</a>
+  </div>
+ </div>
+
+ <!-- Button trigger modal -->
+ <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+ <!-- Modal -->
+
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+   <div class="modal-content">
+    <div class="modal-header">
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+     <h4 class="modal-title" id="exampleModalLabel"></h4>
+    </div>
+    <div class="modal-body">
+     <form>
+      <div class="form-group">
+       <label for="recipient-name" class="control-label">Recipient:</label>
+       <input type="text" class="form-control" id="recipient-name">
+      </div>
+      <div class="form-group">
+       <label for="message-text" class="control-label">Message:</label>
+       <textarea class="form-control" id="message-text"></textarea>
+      </div>
+     </form>
+    </div>
+    <div class="modal-footer">
+     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+     <button type="button" class="btn btn-primary">Send message</button>
+    </div>
+   </div>
+  </div>
+ </div>
+
+
+ <script src="../js/portfolio.js"></script>
+
+ <div class="clip_frame grpelem" id="u287" ) "><!-- image -->
+
+   </div>
+   <div class="browser_width grpelem " id="u289-bw ">
+    <div id="u289 "><!-- group -->
+     <div class="clearfix " id="u289_align_to_page ">
+      <a class="nonblock nontext grpelem " id="u290-6 " href="index.html " ><!-- rasterized frame -->
+       <img id="u290-6_img " alt="BandMate " src="images/u290-6.png?crc=217958629 " data-image-width="458 "/></a>
+     </div>
+    </div>
+   </div>
+   <div class="verticalspacer " data-offset-top="0 " data-content-above-spacer="830 " data-content-below-spacer="830 "></div>
+  </div>
+  <!-- Other scripts -->
+ 
+  <script type="text/javascript ">
+   window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||"
+  "}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||" ";return" "},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g," ").match(/([\d\,]+)/gi)[0].split(", "),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},g=function(g){for(var f=document.getElementsByTagName("link "),h=0;h<f.length;h++)if("text/css "==f[h].type){var i=(f[h].href||"
+  ").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!i||!i[1]||!i[2])break;b[i[1]]=i[2]}f=document.createElement("div ");f.className="version ";f.style.cssText="display:none; width:1px; height:1px; ";document.getElementsByTagName("body ")[0].appendChild(f);for(h=0;h<Muse.assets.required.length;){var i=Muse.assets.required[h],l=i.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
+l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css ":k=k.replace(/\W/gi,"_ ").replace(/^([^a-z])/gi,"_$1 ");f.className+=" "+k;k=a(c(f,"color "));l=a(c(f,"backgroundColor "));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined
+  "!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version ";break;case "js ":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3 "&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js "):Muse.assets.required.push("jquery-1.8.3.min.js ");
+f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.
+  ",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(", ")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(", ")),alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?setTimeout(function(){g(!0)},5E3):g()}};
+var muse_init=function(){require.config({baseUrl:" "});require(["jquery ","museutils ","whatinput ","jquery.watch "],function(d){var $ = d;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function "==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=244322403 " type="text/javascript " async data-main="scripts/museconfig.js?crc=36584860 " onload="if (requirejs) requirejs.onError=f unction(requireType, requireModule) { if (requireType && requireType.toString
+  && requireType.toString().indexOf && 0 <=r equireType.toString().indexOf( '#scripterror')) window.Muse.assets.check(); } " onerror="window.Muse.assets.check(); "></script>
+   </body>
+</html>

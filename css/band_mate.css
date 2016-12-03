@@ -1,0 +1,106 @@
+body {
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .navbar.navbar-inverse {
+      margin: 0;
+    }
+    
+    .col-lg-12.footer {
+      height: 120px;
+      background-color: #DEDEDE;
+      text-align: center;
+    }
+    
+    .col-lg-12.footer p {
+      padding-top: 20px 0;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    button.btn.btn-lg.btn-primary.btn-add-panel {
+      margin: 20px 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      color: white;   
+      background-color: #464646;
+    }
+
+    .panel-group {
+      margin-bottom: 150px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+    
+    body {
+      font-family: Arial;
+      color: #900;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+16,ffffff+16,ffffff+18,ffffff+23,cecece+100 */
+      background: #ffffff;
+      /* Old browsers */
+      background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 16%, #ffffff 16%, #ffffff 18%, #ffffff 23%, #cecece 100%);
+      /* FF3.6-15 */
+      background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 16%, #ffffff 16%, #ffffff 18%, #ffffff 23%, #cecece 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 16%, #ffffff 16%, #ffffff 18%, #ffffff 23%, #cecece 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece', GradientType=1);
+      /* IE6-9 fallback on horizontal gradient */
+    }
+    
+    a {
+      color: #900;
+    }
+    
+    .navbar-header {
+      background-color: #900;
+      
+    }
+    
+    h1 {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+      font-size: 40px;
+      color: #383838;
+    }
+    
+    p {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      color: #383838;   
+      line-height: 1.5;
+    }
+
+.border {
+    width: 100%;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.centered {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+#container {
+    width: 90%;
+}
+
+#tabContainer {
+    width: 100%;
+}
+
+.add-tab {
+    color: #A9A9A9;
+    /*text-align: center;*/
+}
+
+
+/*____________________________________________________________________________*/

@@ -1,0 +1,30 @@
+<manifest alg="2" build="2017.0.0.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="bandmate.com" resolutions="1x" timestamp="1480643455809">
+  <folder name="css">
+    <file name="site_global.css" crc="443350757"/>
+    <file name="master_a-master.css" crc="452397657" ref="data:index:portfolio:concerts"/>
+    <file name="data.css" crc="4283016132" ref="data"/>
+    <file name="index.css" crc="144694961" ref="index"/>
+    <file name="portfolio.css" crc="4283016132" ref="portfolio"/>
+    <file name="concerts.css" crc="4283016132" ref="concerts"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:concerts:portfolio:data"/>
+    <file name="museutils.js" crc="163421577" ref="index:concerts:portfolio:data"/>
+    <file name="whatinput.js" crc="86476730" ref="index:concerts:portfolio:data"/>
+    <file name="museconfig.js" crc="36584860" ref="index:concerts:portfolio:data"/>
+    <file name="jquery.watch.js" crc="104486786" ref="index:concerts:portfolio:data"/>
+    <file name="require.js" crc="244322403" ref="index:concerts:portfolio:data"/>
+  </folder>
+  <folder name="images">
+    <file name="rockbandcopy-crop-u287.jpg" crc="17814763" ref="index:concerts:portfolio:data"/>
+    <file name="u290-6.png" crc="217958629" ref="index:concerts:portfolio:data"/>
+    <file name="rockbandcopy-crop-u94.jpg" crc="17814763" ref="index"/>
+    <file name="u104-4.png" crc="3986467208" ref="index"/>
+    <file name="u115-4.png" crc="432365922" ref="index"/>
+    <file name="u242-6-a.png" crc="217958629" ref="index"/>
+  </folder>
+  <file name="index.html" crc="348973149" seo="true" mt="1480643312461" redirect="true"/>
+  <file name="concerts.html" crc="4068897901" seo="true" mt="1480643312461" redirect="true"/>
+  <file name="portfolio.html" crc="4028593700" seo="true" mt="1480643312461" redirect="true"/>
+  <file name="data.html" crc="245735477" seo="true" mt="1480643312461" redirect="true"/>
+</manifest>

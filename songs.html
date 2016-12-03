@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>BandMate</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/band_mate.css">
+  <link rel="stylesheet" href="css/concerts.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  <!-- jQuery -->
+  <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+  <!-- jQuery UI -->
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment-with-locales.min.js"></script>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
+
+
+  <!-- style for nav bar, footer -->
+  <style>
+  body {
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+	
+		.navbar.navbar-inverse {
+			margin: 0;
+		}
+		
+		.col-lg-12.footer {
+			height: 120px;
+			background-color: #DEDEDE;
+			text-align: center;
+		}
+		
+		.col-lg-12.footer p {
+			padding-top: 20px 0;
+		}
+		
+		button.btn.btn-lg.btn-primary.btn-add-panel {
+			margin: 20px 0;
+		}
+		
+		.panel-group {
+			margin-bottom: 150px;
+		}
+		
+		body {
+			font-family: Arial;
+			color: #900;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+16,ffffff+16,ffffff+18,ffffff+23,cecece+100 */
+			background: #ffffff;
+			/* Old browsers */
+			background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 16%, #ffffff 16%, #ffffff 18%, #ffffff 23%, #cecece 100%);
+			/* FF3.6-15 */
+			background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 16%, #ffffff 16%, #ffffff 18%, #ffffff 23%, #cecece 100%);
+			/* Chrome10-25,Safari5.1-6 */
+			background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 16%, #ffffff 16%, #ffffff 18%, #ffffff 23%, #cecece 100%);
+			/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece', GradientType=1);
+			/* IE6-9 fallback on horizontal gradient */
+		}
+		
+		a {
+			color: #900;
+		}
+		
+		.navbar-header {
+			background-color: #900;
+		}
+		
+		h1 {
+			color: black;
+			font-weight: 300;
+		}
+		
+		h2 {
+			font-weight: 300;
+		}
+    .navbar.navbar-inverse {
+      margin: 0;
+    }
+    
+    .col-lg-12.footer {
+      height: 120px;
+      background-color: #DEDEDE;
+      text-align: center;
+    }
+    
+    .col-lg-12.footer p {
+      padding-top: 20px 0;
+    }
+    
+    button.btn.btn-lg.btn-primary.btn-add-panel {
+      margin: 20px 0;
+    }
+    
+    .panel-group {
+      margin-bottom: 150px;
+    }
+    
+    body {
+      font-family: Arial;
+      color: #900;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+16,ffffff+16,ffffff+18,ffffff+23,cecece+100 */
+      background: #ffffff;
+      /* Old browsers */
+      background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 16%, #ffffff 16%, #ffffff 18%, #ffffff 23%, #cecece 100%);
+      /* FF3.6-15 */
+      background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 16%, #ffffff 16%, #ffffff 18%, #ffffff 23%, #cecece 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 16%, #ffffff 16%, #ffffff 18%, #ffffff 23%, #cecece 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece', GradientType=1);
+      /* IE6-9 fallback on horizontal gradient */
+    }
+    
+    a {
+      color: #900;
+    }
+    
+    .navbar-header {
+      background-color: #900;
+    }
+    
+    h1 {
+      color: black;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse" style="background-color:#900;border:1px #900 solid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html" style="color:white">BandMate</a>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="concerts.html">Concerts</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li class="active"><a href="songs.html">Songs</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="container mainContent">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h1 style="font-family: 'Source Sans Pro', sans-serif;">Songs</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor lobortis lorem vel maximus. Nunc cursus, tellus vel viverra porta, leo enim accumsan tortor, vel tincidunt ex diam sed ligula. Praesent quis nisi cursus, porttitor justo
+          sed, varius eros. Donec ac convallis nisl.</p>
+      </div>
+    </div>
+
+
+
+    <button class="btn btn-lg btn-primary btn-add-panel"> <i class="glyphicon glyphicon-plus"></i> Add new </button>
+
+
+    <div class="panel-group" id="accordion">
+
+      <div class="panel panel-default template">
+        <div class="panel-heading">
+          <a href="song.html">
+            <span class="glyphicon glyphicon-edit pull-right col-sm-1"></span>
+          </a>
+          <h4 class="panel-title">
+            <div class="row">
+
+              <div class="col-xs-1 vcenter icon">
+                <span class="glyphicon glyphicon-collapse-down col-sm-1"></span>
+              </div>
+
+              <a class="accordion-toggle " data-toggle="collapse" data-parent="#accordion" href="#collapseThree"></a>
+
+            </div>
+            <!-- row -->
+          </h4>
+
+        </div>
+        <!-- panel heading -->
+
+
+        <div id="collapseThree" class="panel-collapse collapse">
+          <div class="panel-body"></div>
+        </div>
+
+      </div>
+      <!-- panel default template -->
+    </div>
+    <!-- panel group -->
+
+
+  </div>
+  <!-- row -->
+
+
+
+
+
+  </div>
+  <!-- container mainContent -->
+
+  <!-- footer -->
+  <div class="row">
+    <div class="col-lg-12 footer">
+      <!--<p class="muted pull-right">Copyright 2016 BandMate. All rights reserved.</p>-->
+      <p style="padding-top: 30px;">Copyright 2016 BandMate. All rights reserved.</p>
+      <a href="#">Terms of Service</a> | <a href="#">Privacy</a>
+    </div>
+  </div>
+
+  <script src="js/songs.js"></script>
+
+</body>
+
+</html>

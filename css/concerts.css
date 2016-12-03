@@ -1,0 +1,66 @@
+#container{
+    height: 800px;
+    overflow: scroll;
+}
+.template {
+    display: none;
+}
+
+.btn{
+    margin-bottom: 30px;
+}
+
+div.input-group.date {
+    width: 201px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.headerInfos {
+    width: 450px;
+}
+
+.headerTextInput {
+    width: 100px;
+    height:34px;
+}
+
+.at {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.vcenter {
+    vertical-align: middle;
+}
+
+.panelContent{
+    margin:auto;
+    width:83%;
+}
+
+.bigInput
+{
+    resize: none;   
+    width: 100%;
+    height: 200px;
+}
+
+.checkBoxLabel
+{
+    margin-left: 10px;
+}
+
+.confirmed
+{
+    background-color: green;
+}
+
+.unconfirmed
+{
+    background-color: red;
+}

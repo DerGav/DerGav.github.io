@@ -1,0 +1,87 @@
+.version.data {
+    color: #0000FF;
+    background-color: #49A3C4;
+}
+
+#page {
+    z-index: 1;
+    min-height: 500px;
+    height: 100vh;
+    background-image: none;
+    border-width: 0px;
+    border-color: #000000;
+    background-color: transparent;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('/muse/images/rockbandcopy-crop-u287.jpg');
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#u287 {
+    z-index: 2;
+    position: relative;
+    margin-right: -10000px;
+    margin-top: 54px;
+    width: 146.57%;
+    left: -24.69%;
+}
+
+#u289 {
+    z-index: 4;
+    min-height: 57px;
+    padding-bottom: 17px;
+}
+
+#u289_align_to_page {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#u290-6 {
+    z-index: 5;
+    position: relative;
+    margin-right: -10000px;
+    margin-top: 11px;
+    width: 47.71%;
+    left: 0.94%;
+}
+
+.js body {
+    visibility: hidden;
+}
+
+.js body.initialized {
+    visibility: visible;
+}
+
+#u289-bw {
+    z-index: 4;
+    min-height: 57px;
+}
+
+.css_verticalspacer .verticalspacer {
+    height: calc(100vh - 1660px);
+}
+
+#muse_css_mq,
+.html {
+    background-color: #FFFFFF;
+}
+
+body {
+    position: relative;
+    min-width: 320px;
+}
+
+#u287_img {
+    width: 100.08%;
+}
+
+#u290-6_img {
+    width: 100%;
+}
